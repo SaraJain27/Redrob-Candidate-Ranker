@@ -4,24 +4,21 @@ import pandas as pd
 # Load ranked candidates
 df = pd.read_csv("final_df.csv")
 
-# Sort by your best score
+# Sort by final score
 df = df.sort_values("final_score_v3", ascending=False)
 
 def rank_candidates(job_description):
 
-    top = df.head(20)[[
+    top = df.head(100)[[
         "candidate_id",
         "title",
-        "semantic_score",
-        "behavior_score",
-        "production_evidence_norm",
-        "professional_score_norm",
-        "final_score_v3"
+        "final_score_v3",
+        "reasoning"
     ]].copy()
 
-    top = top.rename(columns={
+    top.rename(columns={
         "final_score_v3": "score"
-    })
+    }, inplace=True)
 
     return top
 
@@ -31,9 +28,15 @@ demo = gr.Interface(
         lines=10,
         label="Paste Job Description"
     ),
-    outputs=gr.Dataframe(),
+    outputs=gr.Dataframe(
+        label="Top 100 Ranked Candidates"
+    ),
     title="AI Recruiter System",
-    description="Rank candidates using semantic matching, behavior signals, production evidence and professional experience."
+    description="""
+Paste a job description to view the top-ranked candidates.
+The ranking is based on semantic similarity, production experience,
+behavior signals, and professional experience.
+"""
 )
 
 demo.launch()
