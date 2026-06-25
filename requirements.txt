@@ -1,6 +1,7 @@
-gradio
-pandas
 numpy
-sentence-transformers
+pandas
 scikit-learn
+sentence-transformers
 torch
+transformers
+gradio
