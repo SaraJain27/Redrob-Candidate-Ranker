@@ -1,0 +1,24 @@
+team_name: Sara Jain
+primary_contact_name: Sara Jain
+primary_contact_email: sarajain565@gmail.com
+primary_contact_phone: 8307961734
+
+github_repository: https://github.com/SaraJain27/Redrob-Candidate-Ranker
+
+sandbox_link: https://huggingface.co/spaces/sarajain123/AI-Recruiter-System
+
+ai_tools:
+  - ChatGPT
+
+compute_environment: Google Colab (Python 3.11)
+
+team_members:
+  - name: Sara Jain
+    email: YOUR_EMAIL@gmail.com
+
+methodology_summary: >
+  This project ranks candidates using SentenceTransformer embeddings,
+  cosine similarity, production score, behavior score, and professional
+  score. Scores are normalized and combined into a weighted final score.
+  The top 100 candidates are selected, and profile-based reasoning is
+  generated using structured information extracted from candidate profiles.
