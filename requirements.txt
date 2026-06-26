@@ -1,7 +1,6 @@
-numpy
-pandas
-scikit-learn
-sentence-transformers
-torch
-transformers
 gradio
+pandas
+numpy
+sentence-transformers
+scikit-learn
+huggingface_hub
