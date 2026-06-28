@@ -4,5 +4,5 @@ numpy
 sentence-transformers
 scikit-learn
 huggingface_hub
+python-docx
 torch
-datasets
