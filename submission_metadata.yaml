@@ -1,24 +1,60 @@
-team_name: Sara Jain
-primary_contact_name: Sara Jain
-primary_contact_email: sarajain565@gmail.com
-primary_contact_phone: 8307961734
 
-github_repository: https://github.com/SaraJain27/Redrob-Candidate-Ranker
+team_name: "NeuralNinjas_X"
 
-sandbox_link: https://huggingface.co/spaces/sarajain123/AI-Recruiter-System
-
-ai_tools:
-  - ChatGPT
-
-compute_environment: Google Colab (Python 3.11)
+primary_contact:
+  name: "Sara Jain"
+  email: "sarajain565@gmail.com"
+  phone: "+91-8307961734"
 
 team_members:
-  - name: Sara Jain
-    email: YOUR_EMAIL@gmail.com
+  - name: "Sara Jain"
+    email: "sarajain565@gmail.com"
+    role: "Team Lead"
+    
+  - name: "Charanjot Kaur"
+    email: "Charanjotkaur1@gmail.com"
 
-methodology_summary: >
-  This project ranks candidates using SentenceTransformer embeddings,
-  cosine similarity, production score, behavior score, and professional
-  score. Scores are normalized and combined into a weighted final score.
-  The top 100 candidates are selected, and profile-based reasoning is
-  generated using structured information extracted from candidate profiles.
+github_repo: "https://github.com/sarajain123/Redrob-Candidate-Ranker"
+
+sandbox_link: "https://huggingface.co/spaces/sarajain123/Redrob-Candidate-Ranker"
+
+reproduce_command: "python app.py"
+
+compute:
+  platform: "Local Windows PC"
+  cpu_cores: 8
+  ram_gb: 16
+  python_version: "3.13"
+  os: "Windows 11"
+  uses_gpu_for_inference: false
+  has_network_during_ranking: false
+  pre_computation_required: false
+  pre_computation_time_minutes: 0
+
+ai_tools_used:
+  - "ChatGPT"
+
+ai_usage_summary: |
+  Used ChatGPT to discuss the project architecture, debug Python errors
+ 
+
+methodology_summary: |
+  This project ranks candidates by combining semantic similarity with
+  AI-specific feature scoring. Candidate profiles are converted into text
+  representations and encoded using the Sentence Transformers
+  all-MiniLM-L6-v2 model. The system computes semantic similarity between
+  the candidate profile and the target Job Description, then combines it
+  with AI Skill Score, Role Relevance Score, and Production Experience
+  Score using a weighted hybrid ranking algorithm. The system generates
+  explainable reasoning for each ranked candidate and exports the results
+  as a downloadable CSV. The application supports uploaded CSV and JSON
+  candidate datasets (up to 100 candidates) for reproducible evaluation
+  in the hackathon sandbox.
+
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  honeypot_check_done: false
+  reproduction_tested: true
+```
