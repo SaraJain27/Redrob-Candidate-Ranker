@@ -7,12 +7,12 @@ primary_contact:
   phone: "+91-8307961734"
 
 team_members:
-  - name: "Sara Jain"
-    email: "sarajain565@gmail.com"
-    role: "Team Lead"
-    
   - name: "Charanjot Kaur"
     email: "Charanjotkaur1@gmail.com"
+    role: "Team Lead"
+    
+  - name: "Sara Jain"
+    email: "sarajain565@gmail.com"
 
 github_repo: "https://github.com/sarajain123/Redrob-Candidate-Ranker"
 
