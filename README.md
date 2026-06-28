@@ -101,9 +101,3 @@ Redrob-Candidate-Ranker/
 
 ---
 
-## Author
-
-**Sara Jain**
-
-MCA Student
-Thapar Institute of Engineering and Technology
